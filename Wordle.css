@@ -35,8 +35,23 @@ html{
 
 .letter-container{
 	display: grid;
-	grid-template-columns: repeat(13, 0.5fr);;
-	grid-template-rows: repeat(2, 50px);
+	grid-template-rows: repeat(3, 50px);
+}
+
+.row1{
+	display: grid;
+	grid-template-columns: repeat(10, 50px);
+	grid-template-rows: repeat(1, 50px);
+}
+.row2{
+	display: grid;
+	grid-template-columns: repeat(9, 50px);
+	grid-template-rows: repeat(1, 50px);
+}
+.row3{
+	display: grid;
+	grid-template-columns: repeat(9, 50px);
+	grid-template-rows: repeat(1, 50px);
 }
 
 .center{
@@ -46,3 +61,21 @@ html{
   	color: white;
 	text-shadow: 1px 1px black;
 }
+
+.textTheme{
+  color: white;
+  font-size: 72px;
+}
+
+header{
+  border-bottom: 1px solid
+}
+
+button{
+	border-radius: 10px;
+}
+
+a { 
+  text-decoration:none;
+  color:white;
+} /* Globally */

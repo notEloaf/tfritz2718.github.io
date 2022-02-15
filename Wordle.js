@@ -2,7 +2,7 @@ var cursorX = 0;
 var cursorY = 0;
 var playable = true;
 var items;
-var outputHeader;
+
 
 var letters;
 
@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
    	items = document.getElementsByClassName("grid-item");
    	letters = document.getElementsByClassName("grid-item2");
    	currentWord = keyWords[getRandomInt(keyWords.length)];
-   	outputHeader = document.getElementById("output");
 }, false);
 
 function getRandomInt(max) {
@@ -42,6 +41,12 @@ document.addEventListener('keydown', function(event) {
 	}
 
 	var K = event.keyCode;
+	typekeycode(K)
+});
+
+
+function typekeycode(key){
+	K = key
 	var index = cursorX + cursorY * 5;
 	if(60 <= K && K <= 90 && cursorX < 5 && cursorY < 6){ // General key press
 		items[index].innerHTML = String.fromCharCode(K);
@@ -87,10 +92,18 @@ document.addEventListener('keydown', function(event) {
 
 		if(correct == 5){
 			playable = false;
-			outputHeader.innerHTML = "You win!!!"
 		}else if(cursorY == 6){
 			playable = false;
-			outputHeader.innerHTML = "The word was " + currentWord + ", you lose!"
 		}
 	}
-});
+}
+
+function typekey(key){
+
+	if(!playable){
+		return;
+	}
+
+	var K = key.toUpperCase().charCodeAt(0)
+	typekeycode(K)
+}

@@ -70,3 +70,8 @@ h4{
 header{
 	border-bottom: 1px solid
 }
+
+a { 
+  text-decoration:none;
+  color:white;
+} /* Globally */

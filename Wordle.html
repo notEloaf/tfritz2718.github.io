@@ -7,7 +7,11 @@
 	<script src="Wordle.js"></script>
 </head>
 <body>
-	<h1 id="output" class = "center">Wordle!</h1>
+	<header>
+		<a href="index.html">
+			<h1 class="center textTheme">Wordle</h1>
+		</a>
+	</header>
 	<div class="center">
 		<div class="grid-container">
 			<div class="grid-item"></div>
@@ -47,33 +51,44 @@
 			<div class="grid-item"></div>
 		</div>
 		<div class="letter-container center">
-			<div class="grid-item2">a</div>
-			<div class="grid-item2">b</div>
-			<div class="grid-item2">c</div>
-			<div class="grid-item2">d</div>
-			<div class="grid-item2">e</div>
-			<div class="grid-item2">f</div>
-			<div class="grid-item2">g</div>
-			<div class="grid-item2">h</div>
-			<div class="grid-item2">i</div>
-			<div class="grid-item2">j</div>
-			<div class="grid-item2">k</div>
-			<div class="grid-item2">l</div>
-			<div class="grid-item2">m</div>
-			<div class="grid-item2">n</div>
-			<div class="grid-item2">o</div>
-			<div class="grid-item2">p</div>
-			<div class="grid-item2">q</div>
-			<div class="grid-item2">r</div>
-			<div class="grid-item2">s</div>
-			<div class="grid-item2">t</div>
-			<div class="grid-item2">u</div>
-			<div class="grid-item2">v</div>
-			<div class="grid-item2">w</div>
-			<div class="grid-item2">y</div>
-			<div class="grid-item2">x</div>
-			<div class="grid-item2">z</div>
+			<div class="row1">
+				<button onclick="typekey('q')">Q</button>
+				<button onclick="typekey('w')">W</button>
+				<button onclick="typekey('e')">E</button>
+				<button onclick="typekey('r')">R</button>
+				<button onclick="typekey('t')">T</button>
+				<button onclick="typekey('y')">Y</button>
+				<button onclick="typekey('u')">U</button>
+				<button onclick="typekey('i')">I</button>
+				<button onclick="typekey('o')">O</button>
+				<button onclick="typekey('p')">P</button>
+			</div>
+			<div class="row2">
+				<button onclick="typekey('a')">A</button>
+				<button onclick="typekey('s')">S</button>
+				<button onclick="typekey('d')">D</button>
+				<button onclick="typekey('f')">F</button>
+				<button onclick="typekey('g')">G</button>
+				<button onclick="typekey('h')">H</button>
+				<button onclick="typekey('j')">J</button>
+				<button onclick="typekey('k')">K</button>
+				<button onclick="typekey('l')">L</button>
+			</div>
+			<div class="row3">
+				<button onclick="typekeycode(13)">Enter</button>
+				<button onclick="typekey('z')">Z</button>
+				<button onclick="typekey('x')">X</button>
+				<button onclick="typekey('c')">C</button>
+				<button onclick="typekey('v')">V</button>
+				<button onclick="typekey('b')">B</button>
+				<button onclick="typekey('n')">N</button>
+				<button onclick="typekey('m')">M</button>
+				<button onclick="typekeycode(8)">DEL</button>
+			</div>
+			
 		</div>
+		<button onclick="window.location.reload();">New Game!</button>
 	</div>
+
 </body>
 </html>

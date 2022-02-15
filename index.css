@@ -33,4 +33,7 @@ header{
   border-bottom: 1px solid
 }
 
-a { color:white } /* Globally */
+a { 
+  text-decoration:none;
+  color:white;
+} /* Globally */
